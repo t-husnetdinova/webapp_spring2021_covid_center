@@ -13,6 +13,7 @@
             <h2>Please fill out the form below:</h2>
             <article>
                 <!-- Define a form-->
+                <!-- form will need an action tag eventually, when we connect a backend to store answers -->
                 <!-- Fun observation: defining a form allows for saved autofill values-->
                 <form>
                     <!-- First name -->
@@ -23,11 +24,16 @@
                     <label for="lname">Last name:</label><br>
                     <input type="text" id="lname" name="lname"><br>
 
-                    <!-- Sex -->
-                    <label for="sex">Sex:</label><br>
-                    <input type="radio" id="sex" name="sex">
-                    <input type="radio" id="sex" name="sex"><br>
-                    
+                    <!-- Gender -->
+                    <!-- One group (same name), three elements (different ids)-->
+                    <label for="gender">Gender:</label><br>
+                    <input type="radio" id="sexMale" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="sexFemale" name="gender" value="female">
+                    <label for="male">Female</label>
+                    <input type="radio" id="sexOther" name="gender" value="other">
+                    <label for="other">Other</label><br>
+
                     <!-- Phone -->
                     <label for="phone">Phone:</label><br>
                     <input type="text" id="phone" name="phone"><br>
