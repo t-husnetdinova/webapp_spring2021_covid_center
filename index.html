@@ -12,46 +12,78 @@
             <!-- Gather data from user in an appropriate manner -->
             <h2>Please fill out the form below:</h2>
             <article>
-                <!-- Part 1: User Information -->
                 <!-- Define a form -->
                 <!-- form will need an action tag eventually, when we connect a backend to store answers -->
                 <!-- Fun observation: defining a form allows for saved autofill values-->
                 <form>
-                    <!-- First name -->
-                    <label for="fname">First name:</label><br>		
-                    <input type="text" id="fname" name="fname"><br>
+                    <!-- Part 1: User Information -->
+                        <h4>Please provide basic information about yourself below:</h4>
+                        <!-- First name -->
+                        <label for="fname">First name:</label><br>		
+                        <input type="text" id="fname" name="fname"><br>
 
-                    <!-- Last name -->
-                    <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname"><br>
+                        <!-- Last name -->
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br>
 
-                    <!-- Gender -->
-                    <!-- One group (same name), three elements (different ids)-->
-                    <label for="gender">Gender:</label><br>
-                    <input type="radio" id="sexMale" name="gender" value="male">
-                    <label for="male">Male</label>
-                    <input type="radio" id="sexFemale" name="gender" value="female">
-                    <label for="male">Female</label>
-                    <input type="radio" id="sexOther" name="gender" value="other">
-                    <label for="other">Other</label><br>
+                        <!-- Gender -->
+                        <!-- One group (same name), three elements (different ids)-->
+                        <label for="gender">Gender:</label><br>
+                        <input type="radio" id="sexMale" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="sexFemale" name="gender" value="female">
+                        <label for="male">Female</label>
+                        <input type="radio" id="sexOther" name="gender" value="other">
+                        <label for="other">Other</label><br>
 
-                    <!-- Phone -->
-                    <label for="phone">Phone:</label><br>
-                    <input type="text" id="phone" name="phone"><br>
+                        <!-- Phone -->
+                        <label for="phone">Phone:</label><br>
+                        <input type="text" id="phone" name="phone"><br>
 
-                    <!-- Email -->
-                    <label for="email">Email:</label><br>
-                    <input type="text" id="email" name="email"><br>
+                        <!-- Email -->
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email"><br>
 
-                    <!-- Address -->
-                    <label for="address">Address:</label><br>
-                    <input type="text" id="address" name="address"><br>
+                        <!-- Address -->
+                        <label for="address">Address:</label><br>
+                        <input type="text" id="address" name="address"><br>
 
-                    <!-- Date of birth -->
-                    <label for="start">Date of birth:</label><br>
-                    <input type="date" id="dob" name="dob" value="2018-07-22" min="1900-01-01" max="2021-02-01"><br>
-                    
+                        <!-- Date of birth -->
+                        <label for="start">Date of birth:</label><br>
+                        <input type="date" id="dob" name="dob" value="2018-07-22" min="1900-01-01" max="2021-02-01"><br>
+
+                    <!-- Part 2: Symptom questionnaire -->
+                        <h4>Have you experienced any of the following symptoms in the last 24 hours?</h4>
+                        <h4>Please answer the following yes/no questions below:</h4>
+
+                        <!-- Fever or chills-->
+                        <label for="p2q1">Fever or chills</label><br>
+                        <input type="radio" id="fever" name="p2q1" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="fever" name="p2q1" value="no">
+                        <label for="no">No</label><br>
+
+                        <!-- Cough -->
+                        <!-- Shortness of breath or difficulty breathing -->
+                        <!-- Fatigue -->
+                        <!-- Muscle or body aches -->
+                        <!-- Headaches-->
+                        <!-- New loss of taste or smell-->
+                        <!-- Sore throat -->
+                        <!-- Congestion or runny nose -->
+                        <!-- Nausea or vomiting -->
+                        <!-- Diarrhea -->
+
+                    <!-- Part 3: Other questions -->
+                        <!-- Have you had contact (within 6 feet for > 15 minutes), or caring for someone who is diagnosed with COVID-19 in the last 14 days and were not wearing proper personal protective equipment? (yes/no) -->
+                        <!-- Have you had a diagnosis of COVID-19 in the last 10 days? (yes/no) -->
+                        <!-- Have you travelled to any country in the last 14 days? (yes/no) -->
+                        <!-- If yes, what countries? -->
+                        <!-- Have you socialized with a group of 6 or more people in the last 14 days? (yes/no) -->
+                        <!-- Current temperature -->
+
                     <!-- Submit the form -->
+                    <br>
                     <label for="submit">Submit your responses:</label><br>
                     <input type="submit">
                 </form>
