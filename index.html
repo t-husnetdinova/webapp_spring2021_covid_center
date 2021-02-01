@@ -12,7 +12,8 @@
             <!-- Gather data from user in an appropriate manner -->
             <h2>Please fill out the form below:</h2>
             <article>
-                <!-- Define a form-->
+                <!-- Part 1: User Information -->
+                <!-- Define a form -->
                 <!-- form will need an action tag eventually, when we connect a backend to store answers -->
                 <!-- Fun observation: defining a form allows for saved autofill values-->
                 <form>
@@ -47,6 +48,8 @@
                     <input type="text" id="address" name="address"><br>
 
                     <!-- Date of birth -->
+                    <label for="start">Date of birth:</label><br>
+                    <input type="date" id="dob" name="dob" value="2018-07-22" min="1900-01-01" max="2021-02-01"><br>
                     
                     <!-- Submit the form -->
                     <label for="submit">Submit your responses:</label><br>
