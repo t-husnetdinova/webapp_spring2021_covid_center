@@ -29,11 +29,12 @@
                         <!-- Gender -->
                         <!-- One group (same name), three elements (different ids)-->
                         <label for="gender">Gender:</label><br>
-                        <input type="radio" id="sexMale" name="gender" value="male">
+                        <input id="gender" style="display:none"> <!-- a near trick for hiding an input-->
+                        <input type="radio" id="male" name="male" value="male">
                         <label for="male">Male</label>
-                        <input type="radio" id="sexFemale" name="gender" value="female">
-                        <label for="male">Female</label>
-                        <input type="radio" id="sexOther" name="gender" value="other">
+                        <input type="radio" id="female" name="female" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="female" value="other">
                         <label for="other">Other</label><br>
 
                         <!-- Phone -->
@@ -49,7 +50,7 @@
                         <input type="text" id="address" name="address"><br>
 
                         <!-- Date of birth -->
-                        <label for="start">Date of birth:</label><br>
+                        <label for="dob">Date of birth:</label><br>
                         <input type="date" id="dob" name="dob" value="2018-07-22" min="1900-01-01" max="2021-02-01"><br>
 
                     <!-- Part 2: Symptom questionnaire -->
@@ -58,10 +59,11 @@
 
                         <!-- Fever or chills-->
                         <label for="p2q1">Fever or chills</label><br>
-                        <input type="radio" id="fever" name="p2q1" value="yes">
-                        <label for="yes">Yes</label>
-                        <input type="radio" id="fever" name="p2q1" value="no">
-                        <label for="no">No</label><br>
+                        <input id="p2q1" style="display:none"> <!-- a near trick for hiding an input-->
+                        <input type="radio" id="feverYes" name="p2q1" value="yes">
+                        <label for="feverYes">Yes</label>
+                        <input type="radio" id="feverNo" name="p2q1" value="no">
+                        <label for="feverNo">No</label><br>
 
                         <!-- Cough -->
                         <!-- Shortness of breath or difficulty breathing -->
@@ -85,7 +87,7 @@
                     <!-- Submit the form -->
                     <br>
                     <label for="submit">Submit your responses:</label><br>
-                    <input type="submit">
+                    <input type="submit" id="submit">
                 </form>
             </article>
         </section>
