@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- good practive to define page language -->
 <html lang = "en">
     <head>
         <title>COVID-19 Center Website</title>
@@ -8,9 +9,43 @@
             <h1>Welcome to the COVID-19 Assessment Website!</h1>
         </header>
         <section>
+            <!-- Gather data from user in an appropriate manner -->
             <h2>Please fill out the form below:</h2>
             <article>
-                Form goes here... (coming soon)
+                <!-- Define a form-->
+                <!-- Fun observation: defining a form allows for saved autofill values-->
+                <form>
+                    <!-- First name -->
+                    <label for="fname">First name:</label><br>		
+                    <input type="text" id="fname" name="fname"><br>
+
+                    <!-- Last name -->
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+
+                    <!-- Sex -->
+                    <label for="sex">Sex:</label><br>
+                    <input type="radio" id="sex" name="sex">
+                    <input type="radio" id="sex" name="sex"><br>
+                    
+                    <!-- Phone -->
+                    <label for="phone">Phone:</label><br>
+                    <input type="text" id="phone" name="phone"><br>
+
+                    <!-- Email -->
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+
+                    <!-- Address -->
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address"><br>
+
+                    <!-- Date of birth -->
+                    
+                    <!-- Submit the form -->
+                    <label for="submit">Submit your responses:</label><br>
+                    <input type="submit">
+                </form>
             </article>
         </section>
         <footer>Copyright 2021 Covid Center Website</footer>
