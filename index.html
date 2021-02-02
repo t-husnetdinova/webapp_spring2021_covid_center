@@ -16,7 +16,8 @@
                 <!-- form will need an action tag eventually, when we connect a backend to store answers -->
                 <!-- Fun observation: defining a form allows for saved autofill values-->
                 <form>
-                    <!-- Part 1: User Information -->
+                    <fieldset>
+                        <!-- Part 1: User Information -->
                         <h4>Please provide basic information about yourself below:</h4>
                         <!-- First name -->
                         <label for="fname">First name:</label><br>		
@@ -53,13 +54,14 @@
                         <label for="dob">Date of birth:</label><br>
                         <input type="date" id="dob" name="dob" value="2018-07-22" min="1900-01-01" max="2021-02-01"><br>
 
-                    <!-- Part 2: COMING SOON -->
-                    <!-- Part 3: COMING SOON -->
+                        <!-- Part 2: COMING SOON -->
+                        <!-- Part 3: COMING SOON -->
 
-                    <!-- Submit the form -->
-                    <br>
-                    <label for="submit">Submit your responses:</label><br>
-                    <input type="submit" id="submit">
+                        <!-- Submit the form -->
+                        <br>
+                        <label for="submit">Submit your responses:</label><br>
+                        <input type="submit" id="submit">
+                    </fieldset>
                 </form>
             </article>
         </section>
