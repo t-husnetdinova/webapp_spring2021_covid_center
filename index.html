@@ -18,43 +18,56 @@
                 <!-- Fun observation: defining a form allows for saved autofill values-->
                 <form>
                     <fieldset>
+                        <legend>Part 1: User Information</legend>
                         <!-- Part 1: User Information -->
-                        <h4>Please provide basic information about yourself below:</h4>
                         <!-- First name -->
-                        <label for="fname">First name:</label><br>		
-                        <input type="text" id="fname" name="fname" required><br>
-
+                        <p>
+                            <label for="fname">First name:</label><br>		
+                            <input type="text" id="fname" name="fname" required><br>
+                        </p>
+                    
                         <!-- Last name -->
-                        <label for="lname">Last name:</label><br>
-                        <input type="text" id="lname" name="lname" required><br>
-
+                        <p>
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname" required><br>
+                        </p>
+                        
                         <!-- Gender -->
                         <!-- One group (same name), three elements (different ids)-->
-                        <label for="gender">Gender:</label><br>
-                        <input id="gender" style="display:none"> <!-- a near trick for hiding an input-->
-                        <input type="radio" id="male" name="male" value="male">
-                        <label for="male">Male</label>
-                        <input type="radio" id="female" name="female" value="female">
-                        <label for="female">Female</label>
-                        <input type="radio" id="other" name="female" value="other">
-                        <label for="other">Other</label><br>
+                        <fieldset>
+                            <legend>Gender: </legend>
+                            <input type="radio" id="male" name="male" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="female" value="female">
+                            <label for="female">Female</label>
+                            <input type="radio" id="other" name="female" value="other">
+                            <label for="other">Other</label><br>
+                        </fieldset>
 
                         <!-- Phone -->
-                        <label for="phone">Phone:</label><br>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                        <p>
+                            <label for="phone">Phone:</label><br>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                        </p>
 
                         <!-- Email -->
-                        <label for="email">Email:</label><br>
-                        <input type="text" id="email" name="email" required><br>
-
+                        <p>
+                            <label for="email">Email:</label><br>
+                            <input type="text" id="email" name="email" required><br>
+                        </p>
+                        
                         <!-- Address -->
-                        <label for="address">Address:</label><br>
-                        <input type="text" id="address" name="address" required><br>
+                        <p>
+                            <label for="address">Address:</label><br>
+                            <input type="text" id="address" name="address" required><br>
+                        </p>
 
                         <!-- Date of birth -->
-                        <label for="dob">Date of birth:</label><br>
-                        <input type="date" id="dob" name="dob" value="2018-07-22" min="1900-01-01" max="2021-02-01"><br>
-
+                        <p>
+                            <label for="dob">Date of birth:</label><br>
+                            <input type="date" id="dob" name="dob" value="2018-07-22" min="1900-01-01" max="2021-02-01"><br>
+                        </p>
+                        
                         <!-- Part 2: COMING SOON -->
                         <!-- Part 3: COMING SOON -->
 
